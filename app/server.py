@@ -1,7 +1,7 @@
 from starlette.applications import Starlette
 from starlette.responses import JSONResponse, HTMLResponse
 from fastai.vision import load_learner, open_image
-import tarfile
+#import tarfile
 from io import BytesIO
 import os
 import sys
@@ -9,8 +9,8 @@ import uvicorn
 
 app = Starlette()
 path = os.path.dirname(os.path.realpath(__file__))
-with tarfile.open("pneu_model_v3.tar.xz") as tar:
-    tar.extractall()
+# with tarfile.open("pneu_model_v3.tar.xz") as tar:
+#     tar.extractall()
 file = 'pneu_model_v3'
 learn = load_learner(path=path, file=file)
 
