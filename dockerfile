@@ -7,9 +7,10 @@ COPY requirements.txt .
 
 RUN pip install --upgrade -r requirements.txt
 
-COPY app app/
+ADD server.py server.py
+ADD pneu_model_v3 pneu_model_v3
 
-RUN python app/server.py
+RUN python server.py
 
 EXPOSE 5000
 
