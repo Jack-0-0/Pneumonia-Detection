@@ -1,7 +1,5 @@
 This model aims to predict the presence of Pneumonia in an X-ray image. It will predict either No Pneumonia, Pneumonia (Virus) or Pneumonia (Bacteria).
 
-The model can be accessed at: https://pneu.onrender.com/ where test images can be uploaded.
-
 ### Example scans
 The examples below are scans that the model has not seen before.
 
